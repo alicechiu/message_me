@@ -7,7 +7,6 @@
   <div class="right menu">
     <div class="ui dropdown item">
       Account <i class="dropdown icon"></i>
-      <%= User.username %>
       <div class="menu">
         <% if logged_in? %>
           <%= link_to "Logout", logout_path, method: :delete, class: "item" %>
